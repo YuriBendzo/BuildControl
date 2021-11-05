@@ -110,9 +110,6 @@
     margin-bottom: 144px;
     text-align: center;
     &__title{
-        font-size: 32px;
-        line-height: 150%;
-        color: $title;
         margin-bottom: 16px;
     }
     &__text{
@@ -139,10 +136,6 @@
         display: flex;
     }
     &__title{
-        font-size: 32px;
-        line-height: 150%;
-        color: $title;
-        font-weight: 400;
         margin-bottom: 16px;
     }
     &__text{
@@ -165,6 +158,7 @@
     }
 }
 .partners{
+    margin-bottom: 78px;
     &__items{
         display: flex;
         flex-wrap: wrap;
@@ -178,4 +172,50 @@
         margin-right: 30px;
         margin-bottom: 10px;
     }
+    &__img:nth-child(5){
+        margin-right: 0;
+    }
+}
+.what-is{
+    margin-bottom: 143px;
+    &__title{
+        margin-bottom: 21px;
+        text-align: center;
+    }
+    &__text{
+        padding-bottom: 28px;
+        text-align: center;
+        max-width: 827px;
+        margin: 0 auto;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+    }
+    &__item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    &__item-box--first{
+        max-width: 500px;
+        margin-right: 90px;
+    }
+    &__item-box--second{
+        max-width: 515px;
+        margin-left: 100px;
+    }
+    &__item-box--third{
+        max-width: 550px;
+        margin-right: 34px;
+    }
+    &__item-title{
+        color: $title;
+        font-size: 18px;
+        line-height: 133%;
+        margin-bottom: 20px;
+    }
+    &__item-text{
+        font-size: 16px;
+        line-height: 150%;
+    }
+
 }
