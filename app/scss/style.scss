@@ -432,3 +432,68 @@
         color: rgba(255, 255, 255, 0.75);
     }
 }
+.how-to{
+    margin-bottom: 96px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        max-width: 465px;
+    }
+    &__title{
+        margin-bottom: 21px;
+    }
+    &__text{
+        margin-bottom: 60px;
+    }
+    &__box{
+        max-width: 520px;
+    }
+    &__list{
+        list-style: none;
+        counter-reset: number;
+    }
+    &__item{
+        counter-increment: number;
+        position: relative;
+        padding-left: 72px;
+    }
+    &__item::before{
+        content: '' counter(number);
+        position: absolute;
+        left: 0;
+        border: 1px solid #DADEDF;
+        padding: 10px 16px 11px 17px;
+    }
+    &__title{
+        font-size: 17px;
+        line-height: 141%;
+        color: $title;
+        margin-bottom: 10px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        padding: 13px 25px;
+        color: #fff;
+        font-size: 17px;
+        line-height: 141%;
+        background-color: $title;
+        border: 1px solid $title;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
+        margin-right: 16px;
+    }
+    &__detail{
+        border: 1px solid #DADEDF;
+        border-radius: 4px;
+        color: $title;
+        font-size: 18px;
+        line-height: 133%;
+        padding: 13px 25px;
+    }
+}
