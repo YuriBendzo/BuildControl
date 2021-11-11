@@ -497,3 +497,103 @@
         padding: 13px 25px;
     }
 }
+.why-us{
+    margin-bottom: 127px;
+   &__title{
+       margin-bottom: 17px;
+       text-align: center;
+   }
+   &__text{
+       color: $title;
+       margin-bottom: 55px;
+       text-align: center;
+   }
+   &__inner{
+       display: flex;
+       position: relative;
+   }
+   &__content{
+       max-width: 460px;
+   }
+   &__item{
+       position: relative;
+   }
+   &__item-img{
+       position: absolute;
+   }
+   &__item-title{
+       font-size: 18px;
+       line-height: 133%;
+       color: $title;
+       margin-bottom: 10px;
+       padding-left: 64px;
+   }
+   &__item-text{
+       font-size: 16px;
+       line-height: 150%;
+       margin-bottom: 30px;
+       padding-left: 64px;
+   }
+   &__slider{
+       position: absolute;
+       right: -95px;
+       max-width: 615px;
+       height: 516px;
+       background-color: #F6F8F9;
+       border-radius: 5px;
+       padding: 45px 92px 56px 41px;
+   }
+   &__slider-text{
+       color: $title;
+       font-size: 30px;
+       line-height: 160%;
+       margin-bottom: 28px;
+       padding-left: 46px;
+       position: relative;
+   }
+   &__slider-text::before{
+       content: '';
+       position: absolute;
+       background-image: url(../images/brackets.png);
+       width: 104px;
+       height: 80px;
+       left: 0;
+       top: -14px;
+       z-index: -1;
+   }
+   &__slider-person{
+       position: relative;
+       margin-bottom: 28px;
+   }
+   &__slider-img{
+       position: absolute;
+       display: inline-block;
+   }
+   &__slider-name,
+   &__slider-company{
+       color: $title;
+       font-size: 16px;
+       line-height: 19px;
+       padding-left: 56px;
+   }
+   &__slider-company{
+       color: #72787D;
+   }
+}
+.why-us .slick-dots{
+    display: flex;
+    justify-content: flex-start;
+}
+.why-us .slick-dots button{
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(3, 111, 199, 0.2);
+    border-radius: 8px;
+}
+.why-us .slick-active button{
+    background-color: #036FC7;
+}
