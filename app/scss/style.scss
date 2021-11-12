@@ -24,6 +24,7 @@
         background-color: $title;
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
         border-radius: 4px;
+        cursor: pointer;
     }
     &__content{
         text-align: center;
@@ -48,6 +49,7 @@
         border-radius: 4px;
         margin-right: 16px;
         margin-bottom: 88px;
+        cursor: pointer;
     }
     &__demo-details{
         border: 1px solid #DADEDF;
@@ -401,6 +403,7 @@
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
         border-radius: 4px;
         margin-right: 16px;
+        cursor: pointer;
     }
     &__details{
         border: 1px solid #DADEDF;
@@ -487,6 +490,7 @@
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
         border-radius: 4px;
         margin-right: 16px;
+        cursor: pointer;
     }
     &__detail{
         border: 1px solid #DADEDF;
@@ -593,6 +597,7 @@
     height: 8px;
     background-color: rgba(3, 111, 199, 0.2);
     border-radius: 8px;
+    cursor: pointer;
 }
 .why-us .slick-active button{
     background-color: #036FC7;
@@ -638,6 +643,9 @@
         color: $title;
         font-weight: 400;
     }
+    &__buttons{
+        padding-bottom: 117px;
+    }
     &__btn{
         padding: 13px 25px;
         color: #fff;
@@ -648,6 +656,7 @@
         box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
         border-radius: 4px;
         margin-right: 16px;
+        cursor: pointer;
     }
     &__link{
         border: 1px solid #DADEDF;
@@ -657,5 +666,76 @@
         line-height: 133%;
         padding: 13px 25px;
         background-color: #fff;
+    }
+}
+.footer{
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 160px;
+    }
+    &__contacts{
+        max-width: 221px;
+    }
+    &__contacts-logo{
+        display: inline-block;
+        margin-bottom: 22px;
+    }
+    &__contacts-text{
+        margin-bottom: 10px;
+    }
+    &__contacts-text,
+    &__contacts-email,
+    &__contacts-phone{
+        font-size: 15px;
+        line-height: 160%;
+        color: #72787D;
+    }
+    &__contacts-text span,
+    &__contacts-email{
+        display: block;
+    }
+    &__contacts-phone{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    &__product,
+    &__service,
+    &__company{
+        max-width: 140px;
+    }
+    &__product-title,
+    &__service-title,
+    &__company-title{
+        color: $title;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 22px;    
+    }
+    &__product-process,
+    &__product-products,
+    &__service-clients,
+    &__service-reliability,
+    &__company-aboutus,
+    &__company-contactus{
+        font-size: 15px;
+        line-height: 160%;
+        color: #72787D;
+        margin-bottom: 8px;
+    }
+    &__company-aboutus{
+        display: block;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #DADEDF;
+        padding: 32px 0 33px;
+    }
+    &__all-rights,
+    &__politic{
+        font-size: 16px;
+        line-height: 150%;
+        color: #72787D;
     }
 }
